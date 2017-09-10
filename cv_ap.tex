@@ -1,0 +1,175 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[left=.5in,right=.5in,top=.6in,bottom=.6in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\pagestyle{empty}
+
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{marvosym}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{enumitem}
+
+%-----------------------------------------------------------
+
+\definecolor{shadecolor}{gray}{0.75}  
+\definecolor{innercolor}{gray}{0.93}  
+\renewcommand{\baselinestretch}{1} % line spacing
+
+% Boxed headings
+\newcommand{\resheading}[1]{\vspace{-.2cm}
+\parbox{\textwidth}{\setlength{\FrameSep}{1pt}
+\begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{1pt}\fcolorbox{innercolor}{innercolor}{\textbf{\sffamily{\mbox{~}\makebox[7.4in][l]
+{\large #1} \vphantom{p\^{E}}}}}}
+\end{shaded}
+}\vspace{-.2cm}}
+
+% Education
+\newcommand{\academics}[5]{
+\begin{tabular*}{7.4in}{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{#3} & \textit{#4} \\
+#5 
+\end{tabular*}}
+
+% Experience with items
+\newcommand{\experience}[4]{
+\begin{minipage}[t]{0.79\textwidth}
+\textbf{#1} \vspace{-.3cm}
+\begin{itemize}[noitemsep,leftmargin=*]
+\item #2
+\end{itemize}
+\end{minipage} 
+\begin{minipage}[t]{0.2\textwidth} 
+\begin{flushright}
+#3\\
+\textit{#4}
+\end{flushright}
+\end{minipage}}
+
+% Achievement items
+\newcommand{\achievements}[3]{
+\begin{minipage}[t]{0.82\textwidth}
+ \textbf{#1}. \textit{#2} 
+\end{minipage} 
+\begin{minipage}[t]{0.15\textwidth} 
+\begin{flushright}
+\textit{#3}
+\end{flushright}
+\end{minipage} }
+
+% Conference items
+\newcommand{\resitem}[2]{
+\hangindent=0.7cm\textbf{#1.} #2}
+
+\begin{document}
+
+% Personal information
+\begin{tabular*}{7.6in}{l@{\extracolsep{\fill}}r}
+\textbf{\huge Ana Cristina Perez-Gea} & 
+\Letter \hspace{.1cm} acperezgea@nyu.edu \hspace{.1cm}
+\Telefon \hspace{.1cm} (210) 882 9216 \\
+218 E 6th St. Apt. 12, New York, NY 10003 & \includegraphics[height=\fontcharht\font`\B]{linkedin_logo.png}  \hspace{.01cm} \href{https://www.linkedin.com/in/acperezgea/}{linkedin.com/in/acperezgea}
+\end{tabular*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\academics{New York University (NYU)-Courant Institute of Mathematical Sciences}{New York, NY}{Master of Science in Scientific Computing}{Dec. 2017}{\small \textbf{Courses:} Programming Languages, Numerical Methods, Inverse Problems,\\ \small\quad High Performance Computing, Machine Learning, Real Time \& Big Data Analytics}
+
+\academics{Instituto Tecnológico Autónomo de México (ITAM)}{Mexico City, Mexico}{Bachelor of Science in Applied Mathematics}{May 2015}{\textbf{Thesis:} Discretization of the Heat Equation with Application to American Options}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Computational Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textsc{MatLab}, Python, Mathematica, Java, C, C++, Ada, Scala, Lisp, \LaTeX, \texttt{R}, SPSS, Stata, Maple, PHP \& SQL
+
+% Visual FoxPro, Visual BASIC
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Work Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\experience{Research Assistant to Professor Susan W. Parker, CIDE}{Scraping and constructing databases in \texttt{R} and Stata \item Programming in \texttt{R} for exploratory analysis and statistical inference}{Mexico City, Mexico}{Jan. 2014-Aug. 2015}
+
+\experience{Data Analyst at Innova y Moderniza tu Aprendizaje A.C. (Inoma)}{Analysis of on-line generated data in SQL to determine the impact of the educational games whose goal is to improve basic education 	\item Programming in PHP of a recommendation algorithm aimed for primary education users, based on both accomplishments and preferences}{Mexico City, Mexico}{May 2013-Sept. 2014}
+
+\experience{Consultant at Inbursa Financial Group}{Programming the algorithm for calculating the legal monthly reserve using the insurance company's complete database in Visual FoxPro}{Mexico City, Mexico}{Sept.-Nov. 2012}
+
+\experience{Inter-American Investment Corporation (IDB Group)}{Revised the fulfillment of contract requirements for each company that received grant funds from IIC country members 	\item Defined and modeled the visual format of the graphical interface for the website	\item Collected and organized information from countries and donor organizations and synthesized their profiles}{Washington, D.C.}{Summer 2011}
+
+\experience{Research Assistant at Embassy of Mexico in Washington, D.C.}{%Research Assistant to the Ministry of Finance Representative 	\item 
+Synthesized and presented reports of collaboration between Mexico and the U.S. published by Baker Institute, Woodrow Wilson Center and SIFMA	\item Analyzed and reported on imports/exports of agricultural \& livestock products}{Washington, D.C.}{Summer 2009}
+
+%\experience{Sales Associate at Tous Jewelry}{Worked having direct relationship with customers}{San Antonio, TX}{2007-2008}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Accomplishments}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\achievements{Graduate-Level Research in Industrial Projects for Students}{%Research for the Aerospace Corporation %on GPS visibility regions using level set methods at the 
+Zuse Institute Berlin}{Summer 2017}
+
+%\experience{Presentation at the Nebraska Conference for Undergraduate Women in Mathematics (NCUWM)}{Presented a poster on the RIPS research}{Lincoln, NE}{Feb. 2014}
+
+%\experience{Talk at the Joint Mathematics Meeting}{Gave a talk on the RIPS research}{Baltimore, MD}{Jan. 2014}
+
+%\experience{Talk at the Second Annual Colloquium of R}{Presented the use of \texttt{R} jointly with Excel to generate automated reports}{Mexico City, Mexico}{Nov. 2013}
+
+%\experience{Presentation at the SACNAS National Conference}{Presented a poster on the RIPS research}{San Antonio, TX}{Oct. 2013}
+
+\achievements{Graduate Student Ambassador}{NYU}{2016}
+
+\achievements{Research in Industrial Projects for Students}{%Research for the Aerospace Corporation %on GPS visibility regions using level set methods at the 
+Institute for Pure \& Applied Math (at UCLA)}{Summer 2013}
+
+\achievements{Leader on project to teach R Language}{ITAM}{2013}
+
+\achievements{Representative of the Applied Mathematics Student Council}{ITAM}{2011-2012}
+
+%\achievements{Volunteer Counselor for Summer Camp}{Children's Association for Maximum Potential}{2008}
+
+%\achievements{Duke University Talent Identification Program (Duke TIP)}{Kansas University}{Summer 2004}
+
+%\achievements{Fundamentals of Finance Course}{Georgetown University}{Summer 2009}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Awards, Grants \& Honors}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+CONACYT-FUNED Scholarship (2015), SACNAS Presentation Award (2013), ITAM Winner of the Internal Mathematics Olympics (2012), ITAM Scholarship (2009), Recognition and scholarship from the French Honor Society (2007)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Conferences}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resitem{2017}{Colfax Developer Training (New York, NY), Future Labs AI Summit (New York, NY)}
+
+\resitem{2014}{IBM DeveloperConnect 2014 (Mexico City, Mexico), XII National Meeting of Demographic Research in Mexico (Mexico City, Mexico), Nebraska Conference for Undergraduate Women in Mathematics (Lincoln, NE), Joint Mathematics Meeting (Baltimore, MD)}
+
+\resitem{2013}{Second Colloquium of R (Mexico City, Mexico), SACNAS National Conference (San Antonio, TX)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Languages}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\experience{English 100\%}{Attended Middle School and High School in the United States}{San Antonio, TX}{2001-2008}
+
+%\experience{Spanish 100\%}{Elementary School and University in Mexico}{Mexico City, Mexico}{2009-Now}
+
+%\experience{French 80\%}{Middle school year \& summer stays in France}{Rodez, France}{2003-2004}
+
+Fluent English, Fluent Spanish, Conversational French
+
+
+
+\end{document}
+
